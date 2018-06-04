@@ -6,8 +6,12 @@ class NavBar extends Component {
   render() {
     return (
       <Menu inverted>
-        <Menu.Item name="Home" onClick={console.log('hey')} />
-        <Menu.Item name="Home" onClick={console.log('hey')} />
+        <Menu.Item>
+          <NavLink to="/">Home</NavLink>
+        </Menu.Item>
+        <Menu.Item>
+          <NavLink to="/Locations">Locations</NavLink>
+        </Menu.Item>
       </Menu>
     );
   }
