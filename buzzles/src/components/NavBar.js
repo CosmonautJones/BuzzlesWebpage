@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Header } from 'semantic-ui-react';
+import { Header, Menu } from 'semantic-ui-react';
 
 class NavBar extends Component {
   render() {
-    return <div>Hello, Travis!</div>;
+    return (
+      <Menu inverted>
+        <Menu.Item name="Home" onClick={console.log('hey')} />
+        <Menu.Item name="Home" onClick={console.log('hey')} />
+      </Menu>
+    );
   }
 }
 
